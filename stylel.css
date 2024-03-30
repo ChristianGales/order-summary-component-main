@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+    --paragraph: 16px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    
+    font-family: "Red Hat Display", sans-serif;
+    background-image: url("images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
+
+    background-color: var(--Very-pale-blue);
+    
+    /* font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal; */
+}
+
+.container {
+    padding: 20px;
+    height: 100vh;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-img {
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    width: inherit;
+    height: auto;
+}
+
+.card {
+    border-radius: 20px;
+    width: 375px;
+    height: auto; 
+    background-color: #fff;
+}
+
+.header {
+    font-family: "Red Hat Display", sans-serif;
+    font-weight: 900;
+    text-align: center;
+    padding: 20px;
+    color: var(--Dark-blue);
+}
+
+.card-text {
+    padding: 0 20px 20px 20px;
+    text-align: center;
+    color: var(--Desaturated-blue);
+    font-size: var(--paragraphs);
+}
+
+.plan {
+    display: flex;
+    margin: 20px;
+    padding: 20px;
+    background-color: var(--Very-pale-blue);
+    border-radius: 16px;
+}
+
+.plan-img {
+    padding-right: 20px ;
+}
+
+span {
+    color: var(--Desaturated-blue);
+    font-size: var(--paragraph);
+}
+
+
+.setting {
+    margin: auto;
+    padding-left: 70px;
+    text-decoration: underline;
+    color: var(--Bright-blue);   
+}
+
+.setting:hover {
+    text-decoration: none;
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.payment {
+    margin: 10px 20px 10px 20px;
+    padding: 15px 100px;
+    border-radius: 8px;
+    border: none;
+    color: var(--Very-pale-blue);
+    font-weight: 700;
+    background-color: var(--Bright-blue);
+}
+
+.payment:hover {
+    cursor: pointer;
+    opacity: .8;
+
+}
+
+.cancel {
+    padding: 0 20px 20px 20px;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.cancel:hover {
+    cursor: pointer;
+}
+
+/* Media Quires */
+/*  375-mobile, 769-tablet, 1440-pc*/
+@media only screen and (max-width: 375px) {
+    body {
+        background-image: url("images/pattern-background-mobile.svg");
+        
+    }
+}
